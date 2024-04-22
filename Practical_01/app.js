@@ -36,3 +36,8 @@ fs.writeFile('./files/hello.txt', content, err => {
     return;
   }
 });
+
+
+
+const chalk = require('chalk')
+console.log('hi')
