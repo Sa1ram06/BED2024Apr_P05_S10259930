@@ -1,3 +1,4 @@
+
 const path = require('node:path');
 
 const notes = './files/hello.txt';
@@ -17,10 +18,10 @@ path.extname(notes); // .txt
 });
 */
 
-
+// Reading Files
 const ds = require('node:fs');
 
-ds.readFile('./files/intro.txt', 'utf8', (err, data) => {
+ds.readFile('./Q1/files/intro', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
@@ -30,7 +31,8 @@ ds.readFile('./files/intro.txt', 'utf8', (err, data) => {
 
 const fs = require('node:fs');
 const content = 'hello world';
-fs.writeFile('./files/hello.txt', content, err => {
+// Writing Files
+fs.writeFile('./Q1/files/hello', content, err => {
   if (err) {
     console.error(err);
     return;
@@ -44,3 +46,4 @@ fs.writeFile('./files/hello.txt', content, err => {
 
 const chalk = require('chalk')
 console.log(chalk.blue('Hello world!'));
+
