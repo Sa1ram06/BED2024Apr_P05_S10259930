@@ -35,9 +35,12 @@ fs.writeFile('./files/hello.txt', content, err => {
     console.error(err);
     return;
   }
+  else {
+    console.log('File written successfully');
+  }
 });
 
 
 
 const chalk = require('chalk')
-console.log('hi')
+console.log(chalk.blue('Hello world!'));
